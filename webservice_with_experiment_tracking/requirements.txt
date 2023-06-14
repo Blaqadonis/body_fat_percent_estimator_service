@@ -1,0 +1,8 @@
+numpy==1.24.3
+pandas==2.0.2
+scikit-learn==1.2.2
+lightgbm==3.3.5
+mlflow==2.4.1
+flask==2.3.2
+waitress==2.1.2
+prefect==2.10.13

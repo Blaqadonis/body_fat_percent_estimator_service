@@ -7,8 +7,8 @@ import numpy as np
 
 MLFLOW_TRACKING_URI = 'http://127.0.0.1:5000'
 client = MlflowClient(tracking_uri=MLFLOW_TRACKING_URI)
-RUN_ID = os.getenv('RUN_ID')
-RUN_ID = '06c44f9292764e73a72a93b9db20a24d'
+#RUN_ID = os.getenv('RUN_ID')
+RUN_ID = '888e5d3c7a154c0f96f3f989304dc744' #copy paste your run id from mlflow ui
 mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
 
 

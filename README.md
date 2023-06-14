@@ -4,7 +4,7 @@ This project was borne out of just playing around with some MLOps tools for prod
 Lists estimates of the percentage of body fat determined by underwater
 weighing and various body circumference measurements for 252 men.
 
-## Why it is!
+## Why I worked on it.
 Taking accurate measurement of body fat is inconvenient/costly and it is desirable to have easy methods of estimating body fat that are not inconvenient/costly.
 
 ## What it is - Content

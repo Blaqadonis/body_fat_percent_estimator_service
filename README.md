@@ -92,7 +92,10 @@ Katch, Frank and McArdle, William (1977). Nutrition, Weight Control, and Exercis
 Wilmore, Jack (1976). Athletic Training and Physical Fitness: Physiological Principles of the Conditioning Process, Allyn and Bacon, Inc., Boston.
 
 
-## How it works!
+
+
+
+# How it works!
 
 Everything here runs locally. If you want to try out the service, follow the steps below:
 
@@ -119,7 +122,7 @@ Now run:
   
 to install all necessary external dependencies.
 
-Next, create a folder called ```output```. It's just for logging some parameters in batch_mode. Run:
+Next, Run:
   
 ``` docker build -t <service-name>:v1 . ```
   

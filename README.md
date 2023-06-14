@@ -96,12 +96,7 @@ Wilmore, Jack (1976). Athletic Training and Physical Fitness: Physiological Prin
 
 Everything here runs locally. If you want to try out the service, follow the steps below:
 
-## 1. Running the container (Dockerfile)
-
-First, you need to have docker installed on your system. I am using a windows machine, and I have docker desktop installed on my system. If you do not have that,
-then you should try doing that first. If you are all set and good, then proceed.
-
-Create a virtual environment. 
+Before you proceed, create a virtual environment. 
 
 I used ```python version 3.8```. To create an environment with that version of python using ```Conda```:
 
@@ -112,6 +107,11 @@ Just replace ```<env-name>``` with any title you want. Next:
 ``` conda activate <env-name>```
   
 to activate the environment.
+
+## 1. Running the container (Dockerfile)
+
+First, you need to have docker installed on your system. I am using a windows machine, and I have docker desktop installed on my system. If you do not have that,
+then you should try doing that first. If you are all set and good, then proceed.
 
 Now run:
   
@@ -151,4 +151,31 @@ If the container is up and running, open up a new terminal. Reactivate the Conda
   
 NOTE: ```test.py``` is an example of data you can send to the ENTRYPOINT to interact with the service. Edit it as much as you desire and try out some predictions.
   
+## 2. Simple web service (server managed locally with Flask)
+
+You need to first run:
+
+```pip install -r requirements.txt```
+
+Followed by  ```python online_webservice_flask/predict.py```  to run this service.
+
+Open up a new terminal. Run ```python test.py```  to interact with the service.
+
+## 3. Web service hosted and managed on MLflow servers
+
+You need to first run:
+
+```pip install -r requirements.txt```
+
+Next, spin up the MLflow server with:
+
+```mlflow server --backend-store-uri sqlite:///local_server.db --default-artifact-root ./artifacts --host localhost --port 5000```
+
+This will create a folder ```artifacts``` on your local machine, as well as the database ```local_server```.
+
+Now, run:
+
+```python test.py```
+
+
 Try it out with family, friends, colleagues, neighbours, and let me know how to improve on it.

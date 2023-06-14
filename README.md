@@ -1,5 +1,10 @@
 #  Body Fat Percent Estimator by 🅱🅻🅰🆀
-This project was borne out of just playing around with some MLOps tools for production, like ```MLflow Prefect wandb``` etcetera.
+![bodyfat](https://github.com/Blaqadonis/body_fat_percent_estimator_service/assets/100685852/045a9a97-61b9-4c31-9ec7-e400711fb6d5)        ![image](https://github.com/Blaqadonis/body_fat_percent_estimator_service/assets/100685852/8e51fbe7-0069-436b-88ef-168473b01101) ![image](https://github.com/Blaqadonis/body_fat_percent_estimator_service/assets/100685852/aff88f75-8538-4fc7-a706-1279423f1b85)
+
+
+
+CAVEAT:
+This project is for fun and my personal education. It came out of just playing around with some MLOps tools for production, like ```MLflow Prefect wandb``` etcetera.
 ## What it is - Context
 Lists estimates of the percentage of body fat determined by underwater
 weighing and various body circumference measurements for 252 men.
